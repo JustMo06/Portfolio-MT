@@ -74,25 +74,25 @@ h4 {
 /* FONTS */
 @font-face {
     font-family: "FiraCode";
-    src: url(./fonts/FiraCode-VariableFont_wght.ttf);
+    src: url(../fonts/FiraCode-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "FiraSans";
-    src: url(./fonts/FiraSans-Regular.ttf);
+    src: url(../fonts/FiraSans-Regular.ttf);
 }
 
 @font-face {
     font-family: "FiraSans_semibold";
-    src: url(./fonts/FiraSans-SemiBold.ttf);
+    src: url(../fonts/FiraSans-SemiBold.ttf);
 }
 
 @font-face {
     font-family: "FiraSans_italic";
-    src: url(./fonts/FiraSans-Italic.ttf);
+    src: url(../fonts/FiraSans-Italic.ttf);
 }
 
 @font-face {
     font-family: "FiraSans_bolditalic";
-    src: url(./fonts/FiraSans-BoldItalic.ttf);
+    src: url(../fonts/FiraSans-BoldItalic.ttf);
 }

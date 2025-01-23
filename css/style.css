@@ -1,7 +1,5 @@
 body {
-    height: 100vh;
-    position: relative;
-    display: flex;
+    background-color: #f8f4ee;
 }
 
 * {
@@ -65,9 +63,13 @@ section {
 }
 
 #mainbar {
+    background-color: #fff;
     padding-inline: 3rem;
     padding-top: 18rem;
+    display: flex;
     flex-grow: 1;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 #hardskills {
@@ -80,6 +82,14 @@ section {
     ul {
         list-style: none;
     }
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .has-icon {

@@ -1,17 +1,29 @@
 body {
-    background-color: #f8f4ee;
-    background-image: url(../img/barbell.png);
+    background-color: #dcc199;
+    background-image: url(../img/waves.png);
+    background-repeat: repeat;
+    background-position: center;
+    min-width: 360px;
 }
 
 * {
     font-family: "FiraSans";
 }
 
+main {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+}
+
 h1,
 h2,
 h3,
 h5 {
-    font-family: firacode;
+    font-family: "firacode";
     font-weight: 400;
 }
 
@@ -31,19 +43,14 @@ ul {
 section {
     display: grid;
     gap: 1rem;
-    /* border: 1px solid; */
 }
 
 #profilebar {
-    position: absolute;
     display: flex;
-    gap: 2.5rem;
+    flex-direction: column;
     top: 2rem;
     background-color: #ebd2ac;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding-left: 5rem;
-    padding-right: 3rem;
+    /* padding-right: 1rem; */
 
     ul {
         border: none;
@@ -53,24 +60,13 @@ section {
 
 #sidebar {
     background-color: #f8f4ee;
-    width: 400px;
-    height: 100%;
-    padding-inline: 3rem;
-    padding-top: 18rem;
-    display: flex;
+    padding: 3rem;
     flex-shrink: 0;
-    flex-direction: column;
-    gap: 2rem;
 }
 
 #mainbar {
     background-color: #fff;
-    padding-inline: 3rem;
-    padding-top: 18rem;
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    gap: 2rem;
+    padding: 3rem;
 }
 
 #hardskills {
@@ -86,11 +82,11 @@ section {
 }
 
 .container {
-    height: 100vh;
-    position: relative;
+    height: 100%;
     display: flex;
-    max-width: 1200px;
-    margin: auto;
+    flex-direction: column;
+    gap: 2rem;
+    overflow-x: auto;
 }
 
 .has-icon {
@@ -100,15 +96,19 @@ section {
 }
 
 .profile-picture {
-    height: 200px;
+    max-height: 250px;
+    object-fit: scale-down;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .profile-info {
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -124,6 +124,43 @@ section {
         &:hover {
             color: rgb(77, 76, 76);
         }
+    }
+}
+
+/* Media queries medium devices */
+@media (width >= 48rem) {
+    main {
+        flex-direction: row;
+    }
+
+    #profilebar {
+        height: 200px;
+        flex-direction: row;
+        gap: 2.5rem;
+        position: absolute;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-left: 5rem;
+    }
+
+    #sidebar,
+    #mainbar {
+        padding-top: 18rem;
+    }
+
+    #sidebar {
+        width: 400px;
+        height: 100%;
+    }
+
+    .profile-info {
+        padding: 2rem;
+        align-items: start;
+    }
+
+    .profile-picture {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
 }
 

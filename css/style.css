@@ -76,7 +76,7 @@ section {
 
 #softskills {
     max-width: 500px;
-    margin: auto;
+    margin-inline: auto;
 }
 
 #hardskills {
